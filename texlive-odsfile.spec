@@ -1,12 +1,12 @@
-# revision 27395
+# revision 32742
 # category Package
 # catalog-ctan /macros/luatex/latex/odsfile
-# catalog-date 2012-08-13 11:41:25 +0200
+# catalog-date 2012-08-14 16:24:07 +0200
 # catalog-license lppl1.3
 # catalog-version 0.2
 Name:		texlive-odsfile
 Version:	0.2
-Release:	7
+Release:	8
 Summary:	Read OpenDocument Spreadsheet documents as LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/odsfile
