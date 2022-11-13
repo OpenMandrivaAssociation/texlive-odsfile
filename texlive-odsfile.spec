@@ -1,18 +1,12 @@
-# revision 32742
-# category Package
-# catalog-ctan /macros/luatex/latex/odsfile
-# catalog-date 2012-08-14 16:24:07 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2
 Name:		texlive-odsfile
-Version:	0.6
-Release:	2
+Version:	38449
+Release:	1
 Summary:	Read OpenDocument Spreadsheet documents as LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/odsfile
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/odsfile.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/odsfile.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/odsfile.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/odsfile.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ so that (for example) the package may be used for drawing some
 plots. The package uses lua's zip library.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,7 +38,7 @@ plots. The package uses lua's zip library.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
