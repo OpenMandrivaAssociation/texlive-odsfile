@@ -1,6 +1,6 @@
 Name:		texlive-odsfile
 Version:	65268
-Release:	1
+Release:	2
 Summary:	Read OpenDocument Spreadsheet documents as LaTeX tables
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/latex/odsfile
