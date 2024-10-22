@@ -1,5 +1,5 @@
 Name:		texlive-odsfile
-Version:	68204
+Version:	72514
 Release:	1
 Summary:	Read OpenDocument Spreadsheet documents as LaTeX tables
 Group:		Publishing
